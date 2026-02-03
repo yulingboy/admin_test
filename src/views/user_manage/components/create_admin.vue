@@ -48,20 +48,20 @@
 	const title = ref()
 
 	bus.on('createId', (id : number) => {
-    Object.keys(formData).forEach((key)=>{
-			formData[key] = null;
+    Object.keys(formDataInfo).forEach((key)=>{
+			(formDataInfo as any)[key] = null;
     	});
 		if (id == 1) {
 			title.value = '新建产品管理员'
-      formDataInfo.identity = '产品管理员'
+			formDataInfo.identity = '产品管理员'
 		}
 		if (id == 2) {
 			title.value = '新建用户管理员'
-      formDataInfo.identity = '用户管理员'
+			formDataInfo.identity = '用户管理员'
 		}
 		if (id == 3) {
 			title.value = '新建消息管理员'
-      formDataInfo.identity = '消息管理员'
+			formDataInfo.identity = '消息管理员'
 		}
 	})
 	// 部门数据
@@ -76,7 +76,8 @@
 		name : string,
 		sex : string,
 		email : string,
-		department : string
+		department : string,
+		identity : string
 	}
 
 	const formDataInfo : FormData = reactive({

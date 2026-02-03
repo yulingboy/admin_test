@@ -46,8 +46,8 @@
 		formDataInfo.product_in_warehouse_number = row.product_in_warehouse_number
 		formDataInfo.product_name = row.product_name
 		formDataInfo.product_single_price = row.product_single_price
-    formData.product_out_number = ''
-		formData.product_out_id = ''
+		formDataInfo.product_out_number = null
+		formDataInfo.product_out_id = null
 	})
 
 	const labelPosition = ref<FormProps['labelPosition']>('left')
