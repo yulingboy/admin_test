@@ -69,7 +69,7 @@ jobs:
         with:
           switches: -avzr --delete
           path: dist/
-          remote_path: ${{ secrets.REMOTE_PATH }}
+          remote_path: /opt/admin_test/html
           remote_host: ${{ secrets.REMOTE_HOST }}
           remote_port: ${{ secrets.REMOTE_PORT || '22' }}
           remote_user: ${{ secrets.REMOTE_USER }}

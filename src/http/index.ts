@@ -3,7 +3,7 @@ import { ElMessage } from 'element-plus'
 
 const instance = axios.create({
 	// 后端url地址
-	baseURL: import.meta.env.VITE_API_BASEURL,
+	// baseURL: import.meta.env.VITE_API_BASEURL,
 	timeout: 6000, //设置超时
 	headers: {
 		'Content-Type': 'application/x-www-form-urlencoded'
